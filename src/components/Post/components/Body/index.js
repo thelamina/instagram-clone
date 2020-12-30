@@ -4,7 +4,7 @@ import styles from './styles';
 
 const Body = ({imageUri}) => {
   return (
-   <Image source={{uri: imageUri}} style={styles.image}/>
+    <Image source={{uri: imageUri}} style={styles.image} resizeMode="cover" />
   );
 };
 
