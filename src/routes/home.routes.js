@@ -4,6 +4,7 @@ import {createStackNavigator} from '@react-navigation/stack';
 import FeatherIcons from 'react-native-vector-icons/Feather';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import HomeScreen from '../screens/HomeScreen';
+import StoryScreen from '../screens/StoryScreen';
 import logo from '../assets/images/logo.png';
 
 const HomeStack = createStackNavigator();
@@ -22,7 +23,7 @@ const HomeRoutes = () => {
           headerRightContainerStyle: {
             marginRight: 15,
           },
-          headerTitleAlign:'center',
+          headerTitleAlign: 'center',
           headerStyle: {
             elevation: 0,
             shadowOpacity: 0,
@@ -39,6 +40,7 @@ const HomeRoutes = () => {
           ),
         }}
       />
+      <HomeStack.Screen name="Story" component={StoryScreen} />
     </HomeStack.Navigator>
   );
 };
